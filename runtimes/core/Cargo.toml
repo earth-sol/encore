@@ -130,7 +130,7 @@ google-cloud-monitoring-v3 = "1.0.0"
 google-cloud-api = "1.0.0"
 google-cloud-wkt = "1.0.0"
 sysinfo = "0.37.2"
-aws-sdk-cloudwatch = { version = "1.94.0", default-features = false, features = [
+aws-sdk-cloudwatch = { version = "1.97.0", default-features = false, features = [
     "behavior-version-latest",
     "rt-tokio",
     "rustls",

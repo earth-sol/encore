@@ -1876,7 +1876,7 @@ dependencies = [
  "hyper 1.7.0",
  "indexmap 2.7.0",
  "insta",
- "jsonwebtoken",
+ "jsonwebtoken 10.3.0",
  "log",
  "malachite",
  "matchit",
@@ -2431,7 +2431,7 @@ dependencies = [
  "google-cloud-metadata 0.4.0",
  "google-cloud-token",
  "home",
- "jsonwebtoken",
+ "jsonwebtoken 9.3.1",
  "reqwest 0.11.27",
  "serde",
  "serde_json",
@@ -2453,7 +2453,7 @@ dependencies = [
  "google-cloud-metadata 0.5.0",
  "google-cloud-token",
  "home",
- "jsonwebtoken",
+ "jsonwebtoken 9.3.1",
  "reqwest 0.12.23",
  "serde",
  "serde_json",
@@ -3438,16 +3438,32 @@ dependencies = [
 
 [[package]]
 name = "jsonwebtoken"
-version = "9.3.0"
+version = "9.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b9ae10193d25051e74945f1ea2d0b42e03cc3b890f7e4cc5faa44997d808193f"
+checksum = "5a87cc7a48537badeae96744432de36f4be2b4a34a05a5ef32e9dd8a1c169dde"
 dependencies = [
- "base64 0.21.7",
+ "base64 0.22.1",
  "js-sys",
  "pem",
  "ring 0.17.8",
  "serde",
  "serde_json",
+ "simple_asn1",
+]
+
+[[package]]
+name = "jsonwebtoken"
+version = "10.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0529410abe238729a60b108898784df8984c87f6054c9c4fcacc47e4803c1ce1"
+dependencies = [
+ "base64 0.22.1",
+ "getrandom 0.2.15",
+ "js-sys",
+ "pem",
+ "serde",
+ "serde_json",
+ "signature 2.2.0",
  "simple_asn1",
 ]
 
@@ -3498,7 +3514,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc2f4eb4bc735547cfed7c0a4922cbd04a4655978c09b54f1f7b228750664c34"
 dependencies = [
  "cfg-if",
- "windows-targets 0.48.5",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
